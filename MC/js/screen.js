@@ -31,3 +31,4 @@ function main(){
     // console.log(window.screen.availWidth);
 }
 setInterval(main,1000);
+//cscscs
