@@ -69,3 +69,4 @@ function online(){
         load_a();
     }
     window.onload=online;
+    //cscs
