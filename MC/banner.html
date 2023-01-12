@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banner</title>
+    <style>
+        #banner{
+            width: 1280px;
+            height: 400px;
+            /* background-color: royalblue; */
+            margin: 0 auto;
+        }
+        body{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <img id="imgtemp" src="image/1.png">
+    </div>
+    <script>
+        function imgroll(){
+            var imgid = document.getElementById("imgtemp");
+            var a=1;
+            // imgid.src="image/"+a+".png";
+            function banner()
+            {
+                // console.log(a);
+                imgid.src="image/"+a+".png";
+                a++;
+                if(a==4)
+                {
+                    a=1
+                }
+            }
+            var time = setInterval(banner,2000);
+        } 
+        window.onload=imgroll;
+    </script>
+</body>
+</html>
